@@ -1,0 +1,79 @@
+@font-face {
+    font-family:ralewaythin;
+    src: url(police/raleway-variablefont_wght-webfont.woff2) format('woff2'),
+         url(police/raleway-variablefont_wght-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+/* Titre et Menu */
+header
+{
+    display:flex;
+    justify-content:space-between;
+}
+.menu
+{
+    display:flex;
+    justify-content:space-around;
+    
+}
+.menu,li
+{
+    margin-right: 20%;
+}
+.logo
+{
+    width:90px;
+    height:30px;
+    margin-top: 20px;
+}
+/* Filtre et Formulaire */
+.filtres
+{
+    display:flex;
+}
+/* Footer */
+#container
+{
+    display: flex; 
+    justify-content:space-between;
+    width:80%;
+    margin: 0px;
+}
+ul
+{
+    list-style-type:none;
+}
+footer
+{
+    background-color: #F2F2F2;
+}
+section 
+{
+    display:flex;
+}
+article
+{
+    display:flex;
+    background-color: #F2F2F2;
+    width:880px;
+    height:625px;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    border-radius: 20px;
+    align-items: center;
+    padding:
+}
+
+aside
+{
+    width:420px;
+    height:625px;
+    background-color:#F2F2F2;
+    margin-left:40px;
+}
+
+
+
+
+
