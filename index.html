@@ -4,17 +4,16 @@
         <!--En tete de la page-->
         <title>Reservia, Plannifiaction de vacances</title>
         <meta charset="utf-8" />
-        <script src="https://kit.fontawesome.com/ad04b664a5.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="slyle.css" />
+        <link rel="stylesheet" href="s.css"/>
     </head>
     <body>
         <!--Logo et Menu-->
         <header>
-            <div class="logo">
-                <img src="images/logo/Reservia@3x.png" alt="logo Reservia" />
+            <div>
+                <img class="logo" src="images/logo/Reservia@3x.png" alt="logo Reservia" />
             </div>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li>Hébergement</li>
                     <li>Activités</li>
                     <li>S'incrire</li>
@@ -23,30 +22,33 @@
         </header>
         <!--Bannière et Filtre -->
         <div classe="banniere">
-            <p>Trouver votre hébergement pour des vacances des rêves</p>
+            <h3>Trouver votre hébergement pour des vacances des rêves</h3>
             <p>en plein centre ville ou en pleine nature</p>
         </div>
         <div class="recherche">
             <form method="post" action="">
                 <p><input name="recherche_de_ville" type="text" placeholder="Marseille, France"/>
             </form>
-        <div class="filtres">
-            <p>Filtres</p>
-            <ul>
-                    <li><i class="fas fa-money-bill-wave"></i>Economique</li>
-                    <li><i class="fas fa-child"></i>Familial</li>
-                    <li><i class="fas fa-heart"></i>Romantique</li>
-                    <li><i class="fas fa-dog"></i>Animeaux autorisés</li>
-            </ul>
-            <p> <i class="fas fa-info-circle"></i>plus de 500 logements sont disponibles dans cette ville</p>
         </div>
+
+
+        <!--conteneur filtres-->
+        <div class="filtres"> 
+            <div>Filtres</div>
+            <div class="money"><i class="fas fa-money-bill-wave"></i>Economique</div>
+            <div class="famille"><i class="fas fa-child"></i>Familial</div>
+            <div class="romance"><i class="fas fa-heart"></i>Romantique</div>
+            <div class="animeaux"><i class="fas fa-dog"></i>Animeaux autorisés</div>
+        </div>
+            <p> <i class="fas fa-info-circle"></i>plus de 500 logements sont disponibles dans cette ville</p>
+        
 
         </div>
             </p>
         </div>
         <section>
             <article>
-                <p>Hébergements à Marseille</p>
+                
                 
                 <div><img src="images/hebergement/minia_auberge.jpg"/><p>Auberge La Cannebière <br/>
                 <span>Nuit à partir de 25€</span></p></div>
@@ -65,7 +67,7 @@
 
                 <div><img src="images/hebergement/minia_amina.jpg"/><p>Hôtel chez Amina<br/>
                 <span>Nuit à partir de 96€</span></p></div>
-                <p>Afficher plus</p>
+        
             </article>
             <aside>
                 <p>Les plus populaires</p>
@@ -80,26 +82,28 @@
                 <span>Nuit à partir de 68€</span></p></div>
             </aside>
         </section>
+        <!--conteneur footer-->
         <footer>
-        <div class="container">
-            <div class="element">
-                <h4>A propos</h4>
-                <ul>
+        <div id="container">
+            <div class="element_apr">
+                
+                <ul class="lap">
+                    <li><h5>A propos</h5></li>
                     <li>Fonctionnement du site</li>
                     <li>Conditions générales de vente</li>
                     <li>Données et confidentialité</li>
                 </ul>
             </div>
             <div class="element">
-                <h4>Nos Hébergements</h4>
                 <ul>
+                    <li><h5>Nos Hébergements</h5></li>
                     <li>Charte qualité</li>
                     <li>Soumettre votre hôtel</li>
                 </ul>
             </div>
-            <div class="element">
-                <h4>Assistance</h4>
+            <div class="element"> 
                 <ul>
+                    <li><h5>Assistance</h5></li>
                     <li>Centre d'aide</li>
                     <li>Nous contacter</li>
                 </ul>
