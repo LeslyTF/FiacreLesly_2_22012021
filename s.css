@@ -1,4 +1,4 @@
-
+/* police */
 @font-face {
     font-family: 'ralewaybold';
     src: url('fonts/raleway-bold-webfont.woff2') format('woff2'),
@@ -22,10 +22,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
-
-
 @font-face {
     font-family: 'ralewayregular';
     src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
@@ -37,6 +33,7 @@ body
 {
     font-family:ralewayregular, sans-serif;
 }
+/* Mise en page*/
 .corps
 {
     width:960px;
@@ -68,17 +65,13 @@ h3
 {
     font-family:ralewaybold, sans-serif
 }
-form
-{
-    
-}
+/* Localiser Rechercher*/
 .localiser
 {
-    height:39px;
+    height:42px;
     border:1px solid #F2F2F2;
     font-family: ralewaybold;
-    color:black;
-    
+    color:black;   
 }
 .rechercher
 {
@@ -90,7 +83,7 @@ form
     font-family:ralewaybold;
     
 }
-/* Filtre et Formulaire */
+/* Filtres */
 .filtres
 {
     display:flex;
@@ -113,7 +106,7 @@ i
     text-align:center;
     padding-right: 10px;
 }
-i
+.filtres i
 {
     color:#0065FC;
     border-radius:50px;
@@ -140,6 +133,7 @@ article
     border-radius: 20px;
     align-items: center;
 }
+/*Les plus popilaires*/
 aside
 {
     width:420px;
@@ -147,16 +141,21 @@ aside
     background-color:#F2F2F2;
     margin-left:40px;
 }
-
 /* Footer */
 #container
 {
     display: flex; 
-    justify-content:space-between;
-    
+    justify-content:space-around;   
+    width:850px;
 }
-footer
+h5
 {
-    boder: 1px solid black;
+    font-family: ralewaybold;
+    font-size: medium;
+}
+.hebergement
+{
+    
+    width:300px
 }
 
