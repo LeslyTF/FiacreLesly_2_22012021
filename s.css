@@ -36,9 +36,9 @@ body
 /* Mise en page*/
 .corps
 {
-    width:1024px;
+    width:1200px;
     margin:auto;
-}   
+}  
 /* Titre et Menu */
 header
 {
@@ -143,24 +143,57 @@ i
 {
 margin-right: 15px;
 }
-footer
-{
-    background-color: #F2F2F2;
-}
+/*interieur de section article hebergement*/
 section 
 {
-    display:flex;
+display: flex;
+}
+.texthebamars
+{
+    width: 300px;
+    font-size: 0.9em;
+    padding-left:40px;
+
 }
 article
 {
+flex-direction:column;
+justify-content: flex-start;
+background-color:#F2F2F2;
+border-radius: 20px;
+}
+.conteneurphoto
+{
     display:flex;
     background-color: #F2F2F2;
-    width:880px;
-    height:625px;
-    flex-wrap:wrap;
-    justify-content:center;
-    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content:space-around;
     align-items: center;
+    
+}
+.conteneurphoto div 
+{
+    background-color: white;
+    padding:5px;
+    margin-top: 15px;
+    border-radius:20px;
+    box-shadow: 3px 3px 8px rgb(201, 201, 201);
+    
+}
+.conteneurphoto div img
+{
+    height:100px;
+    width: 220px;
+    border-radius:15px 15px 0px 0px;
+}
+.etoilegrise
+{
+    color:#F2F2F2;
+}
+h4
+{
+    padding-left: 40px;
+
 }
 /*Les plus popilaires*/
 aside
@@ -171,6 +204,10 @@ aside
     margin-left:40px;
 }
 /* Footer */
+footer
+{
+    background-color: #F2F2F2;
+}
 #container
 {
     display: flex; 
