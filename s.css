@@ -8,21 +8,6 @@
 
 }
 @font-face {
-    font-family: 'ralewaybold_italic';
-    src: url('fonts/raleway-bolditalic-webfont.woff2') format('woff2'),
-         url('fonts/raleway-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'ralewayitalic';
-    src: url('fonts/raleway-italic-webfont.woff2') format('woff2'),
-         url('fonts/raleway-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'ralewayregular';
     src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
          url('fonts/raleway-regular-webfont.woff') format('woff');
@@ -61,6 +46,7 @@ header
     color:white;
     padding:4px;
     border-radius:10px;
+    box-shadow: 3px 3px 5px rgb(201, 201, 201);
 }
 .logo
 {
@@ -150,10 +136,8 @@ display: flex;
 }
 .texthebamars
 {
-    width: 300px;
-    font-size: 0.9em;
-    padding-left:40px;
-
+    font-size: 1em;
+    padding-left:30px;
 }
 article
 {
@@ -186,29 +170,59 @@ border-radius: 20px;
     width: 220px;
     border-radius:15px 15px 0px 0px;
 }
-.etoilegrise
+/*Sous image hebrgement*/
+.nomhotel
 {
-    color:#F2F2F2;
+    font-family: ralewaybold;
+    margin-bottom: 0px;
+    margin-top: 3px;
 }
-h4
+.prixetoile
 {
-    padding-left: 40px;
+    margin-top:5px;
+    font-size: 0.9em;
+}
+.prix
+{
+    font-family:ralewaybold;
+}
+#etoilegrise
+{
+    color:#e6e6e6;
+}
+.afficherplus
+{
+    padding-left: 30px;
+    font-weight:bold;
+    font-size:0.8em;
 
 }
-/*Les plus popilaires*/
+/*Aside Les plus popilaires*/
+aside h3 i
+{
+    font-size:large;
+    color:black;
+}
+aside h3
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
 aside
 {
-    width:420px;
-    height:625px;
+    width:600px;
+    height:550px;
     background-color:#F2F2F2;
     margin-left:40px;
+    border-radius:20px;
 }
 /* Footer */
 footer
 {
     background-color: #F2F2F2;
 }
-#container
+#conteneurfooter
 {
     display: flex; 
     justify-content:space-around;   
