@@ -198,24 +198,61 @@ border-radius: 20px;
 
 }
 /*Aside Les plus popilaires*/
+/* Haut de Aside*/
 aside h3 i
 {
     font-size:large;
     color:black;
 }
-aside h3
-{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1em;
-}
+
 aside
 {
+    display:flex;
+    flex-direction:column;
+    
     width:600px;
     height:550px;
     background-color:#F2F2F2;
     margin-left:40px;
     border-radius:20px;
+    padding-top: 15px;
+    
+    
+       
+}
+aside h3
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1em;
+    margin-top: 0px;
+}
+/*rectangle englobant les 3 hotels*/
+.rect
+{
+    display: flex;
+    padding:0px;
+    margin: 5px 0px 10px 0px ;
+    height: 138px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 280px;  
+    margin-left: 35px;
+    box-shadow: 3px 3px 8px rgb(201, 201, 201);
+}
+/*bordure haut de l'image*/
+.pborder
+{
+    padding:4px 2px 4px 2px;
+    margin-top:3px;
+}/*rectangle de l'image hotel*/
+.imgpopu
+{
+    border-radius: 20px 0px 0px 20px;
+    height:120px;
+    width:100px;
+    margin-top: 0px;
+    margin: 0px 5px 0px 5px;
 }
 /* Footer */
 footer
