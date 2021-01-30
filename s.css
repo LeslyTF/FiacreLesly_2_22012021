@@ -16,7 +16,12 @@
 }
 body
 {
-    font-family:ralewayregular, sans-serif;
+    font-family:ralewayregular,serif, sans-serif;
+}
+a
+{
+    text-decoration: none;
+    color:black;
 }
 /* Mise en page*/
 .corps
@@ -24,7 +29,7 @@ body
     width:1200px;
     margin:auto;
 }  
-/* Titre et Menu */
+/* Titre Logo Menu */
 header
 {
     display:flex;
@@ -39,20 +44,26 @@ header
 .menu,li
 {
     margin-right: 20%;
+    padding-top:35px;
+}
+.inscrire
+{
+    color:#0065FC;
+    font-size: 1,1em;
+    font-family: ralewaybold;
 }
 .menu li:hover
 {
-    background-color: #0065FC;
-    color:white;
-    padding:4px;
-    border-radius:10px;
-    box-shadow: 3px 3px 5px rgb(201, 201, 201);
+    border-top: 1px solid #0065FC;
+    color:#0065FC;
+    
 }
 .logo
 {
     width:110px;
     height:50px;
     margin-top: 20px;
+    padding-top: 50px;
 }
 h3
 {
@@ -125,6 +136,11 @@ i
     background-color:#DEEBFF;
     padding:10px;
 }
+.money:hover, .famille:hover, .romance:hover, .animeaux:hover
+{
+    border:2px solid #0065FC;
+    box-shadow: 3px 3px 8px rgb(201, 201, 201);;
+}
 .inombre
 {
 margin-right: 15px;
@@ -134,11 +150,13 @@ section
 {
 display: flex;
 }
+/*hebergement à marseille*/
 .texthebamars
 {
     font-size: 1em;
     padding-left:30px;
 }
+/* Rectangle hebergement photo*/
 article
 {
 flex-direction:column;
@@ -186,7 +204,7 @@ border-radius: 20px;
 {
     font-family:ralewaybold;
 }
-#etoilegrise
+.etoilegrise
 {
     color:#e6e6e6;
 }
@@ -195,7 +213,6 @@ border-radius: 20px;
     padding-left: 30px;
     font-weight:bold;
     font-size:0.8em;
-
 }
 /*Aside Les plus popilaires*/
 /* Haut de Aside*/
@@ -209,16 +226,13 @@ aside
 {
     display:flex;
     flex-direction:column;
-    
     width:600px;
     height:550px;
     background-color:#F2F2F2;
     margin-left:40px;
     border-radius:20px;
     padding-top: 15px;
-    
-    
-       
+     
 }
 aside h3
 {
@@ -260,6 +274,7 @@ aside h3
     
     display:flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 .actiamarseille
 {
@@ -386,17 +401,20 @@ footer
 #conteneurfooter
 {
     display: flex; 
-    justify-content:space-around;   
-    width:850px;
+    justify-content:space-between;   
+    width:1100px;
 }
 h5
 {
     font-family: ralewaybold;
     font-size: medium;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-.hebergement
-{
-    
-    width:300px
-}
+.hebergement, .element, .element_apr
+{   
+    width:300px;
+    margin-top: 0px;
+}  
+
 
