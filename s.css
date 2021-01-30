@@ -254,6 +254,130 @@ aside h3
     margin-top: 0px;
     margin: 0px 5px 0px 5px;
 }
+/* Section Activité*/
+.activite
+{
+    
+    display:flex;
+    justify-content: space-between;
+}
+.actiamarseille
+{
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+.rectlong
+{
+   height:500px;
+   width:255px;
+   padding:0px;
+   border-radius: 20px;
+   box-shadow: 3px 3px 8px rgb(201, 201, 201);
+   
+}
+.pimg
+{
+    height:420px;
+    width:255px;
+    margin: 0px;
+    border-radius:20px 20px 0px 0px;
+    
+}
+.imglong
+{
+    object-fit: cover;
+    object-position: center;
+    width:100%;
+    height:100%;
+    border-radius:20px 20px 0px 0px;
+    
+}
+.petitcadre
+{
+    height:190px;
+    width:255px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgb(201, 201, 201);
+}
+.ppetit
+{
+    height: 110px;
+    width: 255px;
+    margin: 0px;
+    border-radius:20px 20px 0px 0px;
+}
+.petitimg
+{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius:20px 20px 0px 0px;
+}
+.groscadre
+{
+    height:270px;
+    width:255px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgb(201, 201, 201);
+}
+.pgros
+{
+    height:190px;
+    width:255px;
+    margin:0px;
+    border-radius:20px 20px 0px 0px;
+}
+.grosimg
+{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius:20px 20px 0px 0px;
+
+}
+
+
+.blocdemi
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.demibloc
+{
+    height:230px;
+    width: 250px;
+    border-radius:20px;
+    box-shadow: 3px 3px 8px rgb(201, 201, 201);
+}
+.pdemi
+{
+    height: 150px;
+    width: 250px;
+    margin: 0px;
+    border-radius:20px 20px 0px 0px;
+    
+}
+.demiimg
+{
+    object-fit: cover;
+    object-position: center;
+    width:100%;
+    height:100%;
+    border-radius:20px 20px 0px 0px;
+
+}
+.nomactivite
+{
+    margin:0px;
+    padding:14px;
+    font-family: ralewaybold;
+    
+
+
+}
 /* Footer */
 footer
 {
