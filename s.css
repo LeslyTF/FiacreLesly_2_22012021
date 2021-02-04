@@ -141,53 +141,153 @@ i
     border:2px solid #0065FC;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);;
 }
-.inombre
+.ilogement
 {
-margin-right: 15px;
+text-align: center;
+border:1px solid rgb(189, 186, 186);
+width: 10px;
+font-size:xx-small;
+margin:10px;
+border-radius:5px;
+height:10px;
 }
 /*interieur de section article hebergement*/
-section 
+.section 
 {
-display: flex;
+display:flex;
+justify-content:space-between;
 }
 /*hebergement à marseille*/
-.texthebamars
-{
-    font-size: 1em;
-    padding-left:30px;
-}
-/* Rectangle hebergement photo*/
 article
 {
-flex-direction:column;
-justify-content: flex-start;
-background-color:#F2F2F2;
-border-radius: 20px;
-}
-.conteneurphoto
-{
-    display:flex;
+    display: flex;
+    justify-content: space-around;
     background-color: #F2F2F2;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: center;
-    
+    width:770px;
+    flex-wrap: wrap; 
+    align-items: center; 
+    border-radius: 20px ;  
 }
-.conteneurphoto div 
+.titrehebergement
 {
+    width:745px;
+}
+.casehotel
+{
+
+    height: 200px;
+    width:220x;
+    margin:6px 6px 6px 6px;
+    padding:3px 3px 3px 3px;
     background-color: white;
-    padding:5px;
-    margin-top: 15px;
     border-radius:20px;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);
-    
+
 }
-.conteneurphoto div img
+.rectphoto
 {
-    height:100px;
+    height:130px;
     width: 220px;
-    border-radius:15px 15px 0px 0px;
+    border-radius:20px 20px 0px 0px;
+    margin:0px;
+    padding:0px;
 }
+.photohotel
+{
+    object-fit: cover;
+    object-position: center;
+    height:100%;
+    width:100%;
+    margin:0px;
+    border-radius:20px 20px 0px 0px;
+
+}
+/*nom hotel en gras a retrouver dans section Aside plus bas*/
+.tarif
+{
+    
+    margin:0px;
+}
+.afficherplus
+{
+    font-family:ralewaybold;
+    width:730px
+}
+
+aside 
+{
+
+    width:400px; 
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.bloctitre
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lespluspopu
+{
+    width: 330px;
+}
+.fleche
+{
+    color:black;
+    font-size:large
+}
+.casehotelpopu
+{
+    background-color: white;
+    display: flex;
+    margin:10px;
+    width:350px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgb(201, 201, 201);
+
+}
+.rectphotopopu
+{
+    width:110px;
+    height:130px;
+    margin:0px 10px 0px 0px;
+    padding:3px;
+    border-radius: 20px 0px 0px 20px;
+}
+.photopopu
+{
+    object-fit: cover;
+    object-position: center;
+    width:100%;
+    height:100%;
+    border-radius: 20px 0px 0px 20px;
+
+}
+.partietext
+{
+width:180px;
+
+}
+.nomhotelpopu
+{
+    margin:0px;
+    padding-top: 5px;
+    font-family:ralewaybold;
+
+}
+.tarifpopu
+{
+    margin:0px;
+}
+.etoilepopu
+{
+    margin-top:40px;
+    margin-bottom: 5px;
+}
+
 /*Sous image hebrgement*/
 .nomhotel
 {
@@ -208,66 +308,10 @@ border-radius: 20px;
 {
     color:#e6e6e6;
 }
-.afficherplus
-{
-    padding-left: 30px;
-    font-weight:bold;
-    font-size:0.8em;
-}
-/*Aside Les plus popilaires*/
-/* Haut de Aside*/
-aside h3 i
-{
-    font-size:large;
-    color:black;
-}
 
-aside
-{
-    display:flex;
-    flex-direction:column;
-    width:600px;
-    height:550px;
-    background-color:#F2F2F2;
-    margin-left:40px;
-    border-radius:20px;
-    padding-top: 15px;
-     
-}
-aside h3
-{
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.1em;
-    margin-top: 0px;
-}
-/*rectangle englobant les 3 hotels*/
-.rect
-{
-    display: flex;
-    padding:0px;
-    margin: 5px 0px 10px 0px ;
-    height: 138px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    width: 280px;  
-    margin-left: 35px;
-    box-shadow: 3px 3px 8px rgb(201, 201, 201);
-}
-/*bordure haut de l'image*/
-.pborder
-{
-    padding:4px 2px 4px 2px;
-    margin-top:3px;
-}/*rectangle de l'image hotel*/
-.imgpopu
-{
-    border-radius: 20px 0px 0px 20px;
-    height:120px;
-    width:100px;
-    margin-top: 0px;
-    margin: 0px 5px 0px 5px;
-}
+
+/*Aside Les plus popilaires*/
+
 /* Section Activité*/
 .activite
 {
@@ -413,7 +457,7 @@ h5
 }
 .hebergement, .element, .element_apr
 {   
-    width:300px;
+    width:330px;
     margin-top: 0px;
 }  
 
