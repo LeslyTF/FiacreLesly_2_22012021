@@ -93,8 +93,7 @@ form i
     background-color:#0065FC;
     color:white;
     border:1px solid #0065FC;
-    font-family:ralewaybold;
-    
+    font-family:ralewaybold;   
 }
 /* Filtres */
 .filtres
@@ -308,14 +307,11 @@ width:180px;
 {
     color:#e6e6e6;
 }
-
-
 /*Aside Les plus popilaires*/
 
 /* Section Activité*/
 .activite
-{
-    
+{ 
     display:flex;
     justify-content: space-between;
     margin-bottom: 60px;
@@ -348,8 +344,7 @@ width:180px;
     object-position: center;
     width:100%;
     height:100%;
-    border-radius:20px 20px 0px 0px;
-    
+    border-radius:20px 20px 0px 0px;   
 }
 .petitcadre
 {
@@ -396,8 +391,6 @@ width:180px;
     border-radius:20px 20px 0px 0px;
 
 }
-
-
 .blocdemi
 {
     display:flex;
@@ -433,9 +426,6 @@ width:180px;
     margin:0px;
     padding:14px;
     font-family: ralewaybold;
-    
-
-
 }
 /* Footer */
 footer
@@ -459,6 +449,187 @@ h5
 {   
     width:330px;
     margin-top: 0px;
-}  
+}
+@media only screen and (min-device-width:481px)
+{
+    button
+    {
+        display:none;
+    }
+}
+@media only screen and (min-device-width:320px) and (max-device-width:480px)
+{
+.corps
+{
+    width:auto;
+    border:1px solid black;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+header div
+{
+    border:1px solid black;
+}
+.logo
+{
+
+}
+nav
+{
+    border:1px solid red;
+    padding:0px;
+    
+}
+nav ul
+{
+    border:1px solid blue;
+
+}.menu,li
+{
+    margin-right: 0px;
+    padding-top:0px;
+}
+.inscrire
+{
+    margin-bottom: 80px;
+}
+
+
+/*partie banniere trouver un hebergement*/
+.banniere h3
+{
+    width:80%;
+}
+/* Partie modif Bouton rechercher*/
+.rechercher
+{
+    display:none;
+}
+button
+{
+    margin:0px;
+    padding-left: 0px;
+    background-color: white;
+    border:none;
+}
+.loupe
+{
+    background-color: #0065FC;
+    border-radius:10px 10px 10px 10px;
+    color:white;
+    border:1px solid black;
+    vertical-align: baseline;
+    margin-left: 0px;
+    border:1px solid #0065FC
+    
+}
+/* partie filtres*/
+.filtres
+{
+    display: flex;
+    flex-direction: column;
+    height:170px;
+    flex-wrap:wrap;
+    align-items: flex-start;
+}
+.filtres div
+{
+    margin:5px;
+}
+/*repositionnement des filtres*/
+.filter:nth-child(1)
+{
+    order:1;
+    margin-left: 10px;
+}
+.money:nth-child(2)
+{
+    order:2;
+}
+.famille:nth-child(3)
+{
+    order:5;
+}
+.romance:nth-child(4)
+{
+    order:3;
+}
+.animeaux:nth-child(5)
+{
+    order:4;
+}
+/* partie les plus populaires*/
+aside
+{
+    width:100%;
+    margin:0px;
+    border-radius: 0px;
+}
+/*partie hebergement*/
+.section
+{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.titrehebergement
+{
+    width:auto;
+}
+article
+{
+    display:flex;
+    flex-direction: column;
+    width:auto;
+    background-color: white;
+    align-items: flex-start;
+}
+.casehotel, .rectphoto
+{
+    width:auto;
+}
+.afficherplus
+{
+width:auto;
+margin-left: 5px;
+}
+/* media queries partie activité*/
+.actiamarseille
+{
+    width:auto;
+}
+.activite
+{
+    display:flex;
+    flex-direction: column;
+    width:auto;
+}
+/*gestions taille cadre photo activités*/ 
+.rectlong, .groscadre, .demibloc, .petitcadre
+{
+    height:210px;
+    width:auto;
+    margin:6px;
+
+}
+.pimg, .pgros, .pdemi, .ppetit
+{
+    height:160px;
+    width:auto;  
+}
+.groscadre, .pgros
+{
+    width:auto;
+}
+/* media queries partie du footer*/
+#conteneurfooter
+{
+    display:flex;
+    flex-direction: column;
+    width:auto;
+}
+}
 
 
