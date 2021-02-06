@@ -140,6 +140,7 @@ i
     border:2px solid #0065FC;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);;
 }
+/* phrase nombre de logement disponible*/
 .ilogement
 {
 text-align: center;
@@ -150,7 +151,7 @@ margin:10px;
 border-radius:5px;
 height:10px;
 }
-/*interieur de section article hebergement*/
+/*contenant de article hebergement*/
 .section 
 {
 display:flex;
@@ -212,7 +213,7 @@ article
     font-family:ralewaybold;
     width:730px
 }
-
+/* partie les plus populaires*/
 aside 
 {
 
@@ -299,6 +300,7 @@ width:180px;
     margin-top:5px;
     font-size: 0.9em;
 }
+/*gras euros*/
 .prix
 {
     font-family:ralewaybold;
@@ -450,6 +452,8 @@ h5
     width:330px;
     margin-top: 0px;
 }
+/*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE PORTRAIT*/
+
 @media only screen and (min-device-width:481px)
 {
     button
@@ -459,118 +463,117 @@ h5
 }
 @media only screen and (min-device-width:320px) and (max-device-width:480px)
 {
-.corps
-{
+    /*gestion corps du site*/
+    .corps
+    {
     width:auto;
     border:1px solid black;
-}
-header
-{
+    }
+    /*partie logo et menu*/
+    header
+    {
     display: flex;
     flex-direction: column;
-}
-header div
-{
+    }
+    header div
+    {   
     border:1px solid black;
-}
-.logo
-{
+    }
+    .logo
+    {
 
-}
-nav
-{
+    }   
+    nav
+    {
     border:1px solid red;
     padding:0px;
     
-}
-nav ul
-{
+    }
+    nav ul
+    {
     border:1px solid blue;
 
-}.menu,li
-{
+    }.menu,li
+    {
     margin-right: 0px;
     padding-top:0px;
-}
-.inscrire
-{
+    }
+    .inscrire
+    {
     margin-bottom: 80px;
-}
-
-
-/*partie banniere trouver un hebergement*/
-.banniere h3
-{
+    }
+    /*partie banniere trouver un hebergement*/
+    .banniere h3
+    {
     width:80%;
-}
-/* Partie modif Bouton rechercher*/
-.rechercher
-{
+    }
+    /* Partie modif Bouton rechercher*/
+    .rechercher
+    {
     display:none;
-}
-button
-{
+    }
+    button
+    {
     margin:0px;
     padding-left: 0px;
     background-color: white;
     border:none;
-}
-.loupe
-{
+    }
+    .loupe
+    {
     background-color: #0065FC;
     border-radius:10px 10px 10px 10px;
     color:white;
     border:1px solid black;
     vertical-align: baseline;
     margin-left: 0px;
-    border:1px solid #0065FC
-    
-}
-/* partie filtres*/
-.filtres
-{
+    border:1px solid #0065FC 
+    }
+    /* partie filtres*/
+    .filtres
+    {
     display: flex;
     flex-direction: column;
     height:170px;
     flex-wrap:wrap;
     align-items: flex-start;
-}
-.filtres div
-{
+    }
+    .filtres div
+    {
     margin:5px;
-}
-/*repositionnement des filtres*/
-.filter:nth-child(1)
-{
+    }
+    /*repositionnement des filtres*/
+    .filter:nth-child(1)
+    {
     order:1;
     margin-left: 10px;
-}
-.money:nth-child(2)
-{
+    }
+    .money:nth-child(2)
+    {
     order:2;
-}
-.famille:nth-child(3)
-{
+    }
+    .famille:nth-child(3)
+    {
     order:5;
-}
-.romance:nth-child(4)
-{
+    }
+    .romance:nth-child(4)
+    {
     order:3;
-}
-.animeaux:nth-child(5)
-{
+    }
+    .animaux:nth-child(5)
+    {
     order:4;
-}
-/* partie les plus populaires*/
-aside
-{
+    }
+    /* partie les plus populaires*/
+    aside
+    {   
     width:100%;
     margin:0px;
     border-radius: 0px;
-}
-/*partie hebergement*/
-.section
-{
+    }
+    /*partie hebergement*/
+    .section
+    {
     display:flex;
     flex-direction: column-reverse;
 }
@@ -630,6 +633,78 @@ margin-left: 5px;
     flex-direction: column;
     width:auto;
 }
+}
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation : portrait)
+{
+    /*partie logo menu*/
+    header
+    {
+        display:flex;
+        flex-direction: column;
+    }
+    .menu
+    {
+        display:flex;
+        justify-content: flex-start;
+        padding:auto;
+        font-family: ralewaybold;
+        align-items:center;
+        width:100%;
+        justify-content: space-around;
+
+    }
+    /*partie hebergement*/
+    .section
+    {
+        display:flex;
+        width:auto;
+    }
+    article
+    {
+        display:flex;
+        flex-wrap:wrap;
+        border-radius: 0px;
+        width: auto;
+        justify-content: space-around; 
+        margin-right:2px;   
+        
+    }
+    .titrehebergement
+    {
+        width:100%;
+    }
+    .afficherplus
+    {
+        width: 100%;
+    }
+    /* partie les plus populaires*/
+    aside
+    {
+        display:flex;
+        flex-direction: column;
+        width:auto;
+        justify-content: space-between;
+        border-radius: 0px;
+    }
+    .bloctitre
+    {
+       width:auto; 
+       margin-left: 3px;
+    }
+    .margefleche
+    {
+        display: none;
+    }
+    /*partie activités*/
+    .activite
+    {
+        display:flex;
+        flex-wrap: wrap;
+        width:auto;
+        justify-content: space-around;
+    }
+    
+
 }
 
 
