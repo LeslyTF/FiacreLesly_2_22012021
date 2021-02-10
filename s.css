@@ -21,7 +21,7 @@ body
 a
 {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 /* Mise en page*/
 .corps
@@ -33,37 +33,49 @@ a
 header
 {
     display:flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.menu
+.plogo
+{
+    width:65%;
+    padding-bottom: 0px;
+    margin:0px; 
+}
+.logo
+{
+    padding-top: 15px;
+    margin: 0px;
+    width: 80px;
+}
+nav
 {
     display:flex;
-    justify-content:space-around;
-    
+    width:30%;
+    justify-content: flex-end;
 }
-.menu,li
+.phebergement
 {
-    margin-right: 20%;
-    padding-top:35px;
+    margin-right:50px;
+    padding-top: 15px;
+}
+.phebergement:hover, .pactivite:hover
+{
+    border-top:2px solid #0065FC;
+    color: #0065FC;
+}
+
+.pactivite
+{
+    margin-right: 50px;
+    padding-top: 15px;
 }
 .inscrire
 {
     color:#0065FC;
     font-size: 1,1em;
     font-family: ralewaybold;
-}
-.menu li:hover
-{
-    border-top: 1px solid #0065FC;
-    color:#0065FC;
-    
-}
-.logo
-{
-    width:110px;
-    height:50px;
-    margin-top: 20px;
-    padding-top: 50px;
+    width:auto;
+    padding-top: 15px;
 }
 h3
 {
@@ -95,6 +107,10 @@ form i
     border:1px solid #0065FC;
     font-family:ralewaybold;   
 }
+input::placeholder
+{
+    color:black;
+}
 /* Filtres */
 .filtres
 {
@@ -108,6 +124,10 @@ ul
 i
 {
     color:#0065FC;
+}
+.conteneurfiltres
+{
+    display:flex;
 }
 .money, .famille, .romance, .animeaux
 {
@@ -143,19 +163,19 @@ i
 /* phrase nombre de logement disponible*/
 .ilogement
 {
-text-align: center;
-border:1px solid rgb(189, 186, 186);
-width: 10px;
-font-size:xx-small;
-margin:10px;
-border-radius:5px;
-height:10px;
+    text-align: center;
+    border:1px solid rgb(189, 186, 186);
+    width: 10px;
+    font-size:xx-small;
+    margin:10px;
+    border-radius:5px;
+    height:10px;
 }
 /*contenant de article hebergement*/
 .section 
 {
-display:flex;
-justify-content:space-between;
+    display:flex;
+    justify-content:space-between;
 }
 /*hebergement à marseille*/
 article
@@ -174,7 +194,6 @@ article
 }
 .casehotel
 {
-
     height: 200px;
     width:220x;
     margin:6px 6px 6px 6px;
@@ -182,7 +201,6 @@ article
     background-color: white;
     border-radius:20px;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);
-
 }
 .rectphoto
 {
@@ -200,7 +218,6 @@ article
     width:100%;
     margin:0px;
     border-radius:20px 20px 0px 0px;
-
 }
 /*nom hotel en gras a retrouver dans section Aside plus bas*/
 .tarif
@@ -247,7 +264,6 @@ aside
     width:350px;
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);
-
 }
 .rectphotopopu
 {
@@ -264,19 +280,16 @@ aside
     width:100%;
     height:100%;
     border-radius: 20px 0px 0px 20px;
-
 }
 .partietext
 {
-width:180px;
-
+    width:180px;
 }
 .nomhotelpopu
 {
     margin:0px;
     padding-top: 5px;
     font-family:ralewaybold;
-
 }
 .tarifpopu
 {
@@ -287,13 +300,13 @@ width:180px;
     margin-top:40px;
     margin-bottom: 5px;
 }
-
 /*Sous image hebrgement*/
 .nomhotel
 {
     font-family: ralewaybold;
     margin-bottom: 0px;
     margin-top: 3px;
+    color: black;
 }
 .prixetoile
 {
@@ -309,8 +322,6 @@ width:180px;
 {
     color:#e6e6e6;
 }
-/*Aside Les plus popilaires*/
-
 /* Section Activité*/
 .activite
 { 
@@ -440,6 +451,10 @@ footer
     justify-content:space-between;   
     width:1100px;
 }
+ul li
+{
+    margin: 15px 0px 15px 0px;
+}
 h5
 {
     font-family: ralewaybold;
@@ -452,206 +467,52 @@ h5
     width:330px;
     margin-top: 0px;
 }
-/*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE PORTRAIT*/
+/*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE*/
 
-@media only screen and (min-device-width:481px)
-{
-    button
-    {
-        display:none;
-    }
-}
-@media only screen and (min-device-width:320px) and (max-device-width:480px)
-{
-    /*gestion corps du site*/
-    .corps
-    {
-    width:auto;
-    border:1px solid black;
-    }
-    /*partie logo et menu*/
-    header
-    {
-    display: flex;
-    flex-direction: column;
-    }
-    header div
-    {   
-    border:1px solid black;
-    }
-    .logo
-    {
-
-    }   
-    nav
-    {
-    border:1px solid red;
-    padding:0px;
-    
-    }
-    nav ul
-    {
-    border:1px solid blue;
-
-    }.menu,li
-    {
-    margin-right: 0px;
-    padding-top:0px;
-    }
-    .inscrire
-    {
-    margin-bottom: 80px;
-    }
-    /*partie banniere trouver un hebergement*/
-    .banniere h3
-    {
-    width:80%;
-    }
-    /* Partie modif Bouton rechercher*/
-    .rechercher
-    {
-    display:none;
-    }
-    button
-    {
-    margin:0px;
-    padding-left: 0px;
-    background-color: white;
-    border:none;
-    }
-    .loupe
-    {
-    background-color: #0065FC;
-    border-radius:10px 10px 10px 10px;
-    color:white;
-    border:1px solid black;
-    vertical-align: baseline;
-    margin-left: 0px;
-    border:1px solid #0065FC 
-    }
-    /* partie filtres*/
-    .filtres
-    {
-    display: flex;
-    flex-direction: column;
-    height:170px;
-    flex-wrap:wrap;
-    align-items: flex-start;
-    }
-    .filtres div
-    {
-    margin:5px;
-    }
-    /*repositionnement des filtres*/
-    .filter:nth-child(1)
-    {
-    order:1;
-    margin-left: 10px;
-    }
-    .money:nth-child(2)
-    {
-    order:2;
-    }
-    .famille:nth-child(3)
-    {
-    order:5;
-    }
-    .romance:nth-child(4)
-    {
-    order:3;
-    }
-    .animaux:nth-child(5)
-    {
-    order:4;
-    }
-    /* partie les plus populaires*/
-    aside
-    {   
-    width:100%;
-    margin:0px;
-    border-radius: 0px;
-    }
-    /*partie hebergement*/
-    .section
-    {
-    display:flex;
-    flex-direction: column-reverse;
-}
-.titrehebergement
-{
-    width:auto;
-}
-article
-{
-    display:flex;
-    flex-direction: column;
-    width:auto;
-    background-color: white;
-    align-items: flex-start;
-}
-.casehotel, .rectphoto
-{
-    width:auto;
-}
-.afficherplus
-{
-width:auto;
-margin-left: 5px;
-}
-/* media queries partie activité*/
-.actiamarseille
-{
-    width:auto;
-}
-.activite
-{
-    display:flex;
-    flex-direction: column;
-    width:auto;
-}
-/*gestions taille cadre photo activités*/ 
-.rectlong, .groscadre, .demibloc, .petitcadre
-{
-    height:210px;
-    width:auto;
-    margin:6px;
-
-}
-.pimg, .pgros, .pdemi, .ppetit
-{
-    height:160px;
-    width:auto;  
-}
-.groscadre, .pgros
-{
-    width:auto;
-}
-/* media queries partie du footer*/
-#conteneurfooter
-{
-    display:flex;
-    flex-direction: column;
-    width:auto;
-}
-}
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation : portrait)
 {
     /*partie logo menu*/
     header
     {
         display:flex;
-        flex-direction: column;
-    }
-    .menu
-    {
-        display:flex;
+        flex-wrap:wrap;
         justify-content: flex-start;
-        padding:auto;
-        font-family: ralewaybold;
-        align-items:center;
-        width:100%;
-        justify-content: space-around;
+    }
+    .plogo:nth-child(1)
+    {
+        width: 100%;
+        order:1;
+    } 
+    nav:nth-child(2)
+    {
+        order:3;
+        width:80%;
+        display: flex;
+        justify-content: center;
 
+    }
+    .inscrire:nth-child(3)
+    {
+        order:2;
+        width:10%;
+        text-align: center;
+        border-radius:10px;
+        box-shadow:0px 3px 8px rgb(201, 201, 201);
+
+    }
+    .phebergement
+    {
+        border-radius:10px;
+        box-shadow:0px 3px 8px rgb(201, 201, 201);
+        width: 200px;
+        text-align: center;
+    }
+    .pactivite
+    {
+        border-radius:10px;
+        box-shadow:0px 3px 8px rgb(201, 201, 201);
+        width: 200px;
+        text-align: center;
     }
     /*partie hebergement*/
     .section
@@ -703,8 +564,207 @@ margin-left: 5px;
         width:auto;
         justify-content: space-around;
     }
-    
+}
 
+@media only screen and (min-device-width:320px) and (max-device-width:480px)
+{
+    /*gestion corps du site*/
+    .corps
+    {
+        width:auto;
+    }
+    /*partie logo et menu*/
+    header
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .plogo:nth-child(1)
+    {
+        order:1;
+        padding-top: 4px;
+    }
+    nav:nth-child(2)
+    {
+        order:3;
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+    }
+    .inscrire:nth-child(3)
+    {
+        order:2;
+
+    }
+    .phebergement
+    {
+        text-align: center;
+        margin:0px;
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 15px;
+    }
+    .pactivite
+    {
+        width:50%;
+        margin: 0px;
+        text-align: center;
+        border-bottom:3px solid #F2F2F2;
+        padding-bottom: 15px;
+    }
+    .phebergement:hover, .pactivite:hover
+    {   border-top:none;
+        color:#0065FC;
+        border-bottom:2px solid #0065FC;
+    }
+    /*partie banniere trouver un hebergement*/
+    .banniere h3
+    {
+        width:80%;
+    }
+    /* Partie modif Bouton rechercher*/
+    .rechercher
+    {
+        display:none;
+    }
+    button
+    {
+        margin:0px;
+        padding-left: 0px;
+        background-color: white;
+        border:none;
+    }
+    .loupe
+    {
+        background-color: #0065FC;
+        border-radius:10px 10px 10px 10px;
+        color:white;
+        border:1px solid black;
+        vertical-align: baseline;
+        margin-left: 0px;
+        border:1px solid #0065FC 
+    }
+    /* partie filtres*/
+    .filtres
+    {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding-left: 10px;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .conteneurfiltres
+    {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height:130px;
+        width:100%;
+        justify-content: space-between;
+    }
+    /*repositionnement des filtres*/
+    .filter
+    {
+        margin:5px 0px 10px 0px;
+        padding: 0px;
+    }
+    .money:nth-child(1)
+    {
+        text-align: left;
+        order:1;
+    }
+    .famille:nth-child(2)
+    {
+        order:4;
+        text-align: left;
+    }
+    .romance:nth-child(3)
+    {
+        text-align: left;
+        order:2;
+    }
+    .animeaux:nth-child(4)
+    {
+        order:3;
+        text-align: left;
+    }
+    /* partie les plus populaires*/
+    aside
+    {   
+        width:100%;
+        margin:0px;
+        border-radius: 0px;
+    }
+    /*partie hebergement*/
+    .section
+    {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .titrehebergement
+    {
+        width:auto;
+    }
+    article
+    {
+        display:flex;
+        flex-direction: column;
+        width:auto;
+        background-color: white;
+        align-items: flex-start;
+    }
+    .casehotel, .rectphoto
+    {
+        width:auto;
+    }
+    .afficherplus
+    {
+        width:auto;
+        margin-left: 5px;
+    }
+/* media queries partie activité*/
+    .actiamarseille
+    {
+        width:auto;
+    }
+    .activite
+    {
+        display:flex;
+        flex-direction: column;
+        width:auto;
+    }
+/*gestions taille cadre photo activités*/ 
+    .rectlong, .groscadre, .demibloc, .petitcadre
+    {
+        height:210px;
+        width:auto;
+        margin:6px;
+    }
+    .pimg, .pgros, .pdemi, .ppetit
+    {
+        height:160px;
+        width:auto;  
+    }
+    .groscadre, .pgros
+    {
+        width:auto;
+    }
+/* media queries partie du footer*/
+    #conteneurfooter
+    {
+        display:flex;
+        flex-direction: column;
+        width:auto;
+    }
+}
+@media only screen and (min-device-width:481px)
+{
+    button
+    {
+        display:none;
+    }    
 }
 
 

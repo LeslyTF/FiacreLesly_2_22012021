@@ -10,19 +10,17 @@
     </head>
     <body>
         <div class=corps>
+
         <!--Logo et Menu-->
         <header>
-            <div>
-                <img class="logo" src="images/logo/Reservia.svg"  alt="logo Reservia"/>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#hebergement">Hébergement</a></li>
-                    <li><a href="#activite">Activités</a></li>
-                    <li class="inscrire">S'incrire</li>
-                </ul>
-            </nav>
+            <p class="plogo"><img class="logo" src="images/logo/Reservia.svg"  alt="logo Reservia"/></p>
+                <nav>
+                    <p class="phebergement"><a href="#hebergement">Hébergements</a></p>
+                    <p class="pactivite"><a href="#activite">Activités</a></p> 
+                </nav>
+            <p class="inscrire">S'inscrire</p>
         </header>
+
         <!--Bannière Rechercher et Filtre -->
         <div class="banniere">
             <h3>Trouver votre hébergement pour des vacances des rêves</h3>
@@ -33,17 +31,19 @@
                 <p><i class="fas fa-map-marker-alt"></i><input class="localiser" name="recherche_de_ville" type="text" placeholder="Marseille, France"/><input class="rechercher" type="submit" value="Rechercher "/><button type="submit"><i class="fas fa-search loupe"></i></button></p>
             </form>
         </div>
+
         <!--conteneur filtres-->
-        <div class="filtres">
-            <div class="filter">Filtres</div>
-            <div class="money"><i class="fas fa-money-bill-wave"></i>Economique</div>
-            <div class="famille"><i class="fas fa-child"></i>Familial</div>
-            <div class="romance"><i class="fas fa-heart"></i>Romantique</div>
-            <div class="animeaux"><i class="fas fa-dog"></i>Animaux autorisés</div>
-        </div>
+        <section class="filtres">
+                <h4 class="filter">Filtres</h4>   
+                <div class="conteneurfiltres">
+                <div class="money"><i class="fas fa-money-bill-wave"></i>Economique</div>
+                <div class="famille"><i class="fas fa-child"></i>Familial</div>
+                <div class="romance"><i class="fas fa-heart"></i>Romantique</div>
+                <div class="animeaux"><i class="fas fa-dog"></i>Animaux autorisés</div>
+                </div>
+        </section>
             <p> <span class="inombre"><i class="fas fa-info ilogement"></i></span>plus de 500 logements sont disponibles dans cette ville</p>
         <!--titre de hebergement en haut d'article et "afficher plus en bas de l'article"-->
-        
         
         <!--Section Conteneur Hebergement et Aside les plus populaires-->   
         <div class="section">
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="casehotel"><p class="rectphoto"><a href="#"><img class="photohotel" src="images/hebergement/hotelduport.jpg" alt="hotel du port"/></a></p>
-                    <p class="nomhotel"><a href="href">Hôtel du port</a></p>
+                    <p class="nomhotel"><a href="#">Hôtel du port</a></p>
                     <p class="tarif">Nuit à partir de 52<span class="prix">€</span><br>
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                 </div>
@@ -88,8 +88,8 @@
                 </div>
 
                 <p class="afficherplus">Afficher plus</p>
-    
             </article>
+            <!--debut les plus populaires-->
                 <aside>
                     <div class="bloctitre"><h3 class="lespluspopu">Les plus populaires </h3><p class="margefleche"><i class="fas fa-chart-line fleche"></i></p></div>
 
@@ -116,9 +116,9 @@
                                                 <p class="etoilepopu"><a href="#"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star etoilegrise"></i></a></p>
                         </div>
                     </div>
-            </aside>
+                </aside>
         </div>
-        
+    <!--debut activités à Marseille-->
     <section><h3 id="activite" class="actiamarseille">Activités à Marseille</h3>
     
         <div class="activite">
@@ -135,7 +135,7 @@
         </div>
 
             <div class="rectlong"><a href="#"><p class="pimg"><img class="imglong"  src="images/Activitesmall/parcnationaldescalanques.jpg" alt="parc national des calanques"/></p>
-            <p class="nomactivite">Parc national des Calanques</p></a></div>
+            <p class="nomactivite">Parc National des Calanques</p></a></div>
 
         <div class="blocdemi">
             <div class="demibloc"><a href="#"><p class="pdemi"><img class="demiimg" src="images/Activitesmall/notredamedelagarde.jpg" alt="notre dame de la garde"/></p>
@@ -144,7 +144,7 @@
             <div class="demibloc" ><a href="#"><p class="pdemi"><img class="demiimg" src="images/Activitesmall/parclongchamp.jpg" alt="Parc Longchamp"/></p>
             <p class="nomactivite">Parc Longchamp</p></a></div>
         </div>
-    </div>
+        </div>
     </section>
         <!--Conteneur footer-->
         <footer>
