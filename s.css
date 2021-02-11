@@ -469,7 +469,7 @@ h5
 }
 /*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE*/
 
-@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation : landscape)
+@media only screen and (min-device-width:728px) and (max-device-width:1024px) and (orientation : landscape)
 {
     /*partie logo menu*/
     header
@@ -643,6 +643,7 @@ h5
         vertical-align: baseline;
         margin-left: 0px;
         border:1px solid #0065FC 
+
     }
     /* partie filtres*/
     .filtres
@@ -715,7 +716,11 @@ h5
         background-color: white;
         align-items: flex-start;
     }
-    .casehotel, .rectphoto
+    .casehotel
+    {
+        width:95%;
+    }
+    .rectphoto
     {
         width:auto;
     }
@@ -759,7 +764,7 @@ h5
         width:auto;
     }
 }
-@media only screen and (min-device-width:0px)
+@media only screen and (min-device-width:481px)
 {
     button
     {
