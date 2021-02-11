@@ -111,6 +111,10 @@ input::placeholder
 {
     color:black;
 }
+button
+{
+    visibility: hidden;
+}
 /* Filtres */
 .filtres
 {
@@ -469,7 +473,7 @@ h5
 }
 /*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE*/
 
-@media only screen and (min-device-width:728px) and (max-device-width:1024px) and (orientation : landscape)
+@media only screen and (min-device-width:320px) and (max-device-width:1024px) and (orientation : landscape)
 {
     /*partie logo menu*/
     header
@@ -633,6 +637,7 @@ h5
         padding-left: 0px;
         background-color: white;
         border:none;
+        visibility: visible;
     }
     .loupe
     {
@@ -643,7 +648,6 @@ h5
         vertical-align: baseline;
         margin-left: 0px;
         border:1px solid #0065FC 
-
     }
     /* partie filtres*/
     .filtres
@@ -697,6 +701,10 @@ h5
         width:100%;
         margin:0px;
         border-radius: 0px;
+    }
+    .casehotel
+    {
+        width:95%;
     }
     /*partie hebergement*/
     .section
@@ -763,13 +771,6 @@ h5
         flex-direction: column;
         width:auto;
     }
-}
-@media only screen and (min-device-width:481px)
-{
-    button
-    {
-        display:none;
-    }    
-}
+}    
 
 
