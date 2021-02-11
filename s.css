@@ -469,7 +469,7 @@ h5
 }
 /*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE*/
 
-@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation : portrait)
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation : landscape)
 {
     /*partie logo menu*/
     header
@@ -759,7 +759,7 @@ h5
         width:auto;
     }
 }
-@media only screen and (max-device-width:0px)
+@media only screen and (min-device-width:0px)
 {
     button
     {
