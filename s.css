@@ -332,6 +332,7 @@ aside
     display:flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    width: 97%;
 }
 .actiamarseille
 {
@@ -473,7 +474,7 @@ h5
 }
 /*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE*/
 
-@media only screen and (min-device-width:320px) and (max-device-width:1024px) and (orientation : landscape)
+@media screen and (min-device-width:768px) and (max-device-width:1024px)
 {
     /*partie logo menu*/
     header
@@ -631,6 +632,10 @@ h5
     {
         display:none;
     }
+    .localiser
+    {
+        margin:0px;
+    }
     button
     {
         margin:0px;
@@ -698,13 +703,13 @@ h5
     /* partie les plus populaires*/
     aside
     {   
-        width:100%;
+        width:auto;
         margin:0px;
         border-radius: 0px;
     }
-    .casehotel
+    .casehotelpopu
     {
-        width:95%;
+        width:90%;
     }
     /*partie hebergement*/
     .section
