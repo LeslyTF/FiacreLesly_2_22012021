@@ -474,7 +474,7 @@ h5
 }
 /*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE*/
 
-@media screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation: landscape)
+@media screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation: landscape)
 {
     /*partie logo menu*/
     header
