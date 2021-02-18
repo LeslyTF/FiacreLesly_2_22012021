@@ -16,18 +16,24 @@
 }
 body
 {
+    max-width:1920px;
+    min-width: 320px;
     font-family:ralewayregular,serif, sans-serif;
+    margin: auto;
 }
 a
 {
     text-decoration: none;
     color: black;
+    width: auto;
 }
+
 /* Mise en page*/
 .corps
 {
-    width:1200px;
+    width:auto;
     margin:auto;
+    padding:30px;
 }  
 /* Titre Logo Menu */
 header
@@ -45,7 +51,7 @@ header
 {
     padding-top: 15px;
     margin: 0px;
-    width: 80px;
+    width:9%;
 }
 nav
 {
@@ -55,8 +61,10 @@ nav
 }
 .phebergement
 {
+    margin-top: 12px;
     margin-right:50px;
-    padding-top: 15px;
+    border:2px solid white;
+    padding-top: 16px;
 }
 .phebergement:hover, .pactivite:hover
 {
@@ -67,20 +75,27 @@ nav
 .pactivite
 {
     margin-right: 50px;
-    padding-top: 15px;
+    padding-top: 16px;
+    border:2px solid white;
+    margin-top: 12px;
 }
 .inscrire
 {
     color:#0065FC;
     font-family: ralewaybold;
     width:auto;
-    padding-top: 15px;
+    padding-top: 18px;
+    margin-top:12px;
 }
 h3
 {
     font-family:ralewaybold, sans-serif
 }
 /* Localiser Rechercher*/
+.ibordure
+{
+    border:1px solid black;
+}
 form i
 {
     
@@ -100,15 +115,21 @@ form i
 .rechercher
 {
     border-radius:0px 10px 10px 0px;
-    height:45px;
+    height:46px;
+    margin:10px;
     background-color:#0065FC;
     color:white;
     border:none;
-    font-family:ralewaybold;   
+    font-family:ralewaybold;
+    margin:0px;
+    font-size:0.9em; 
+    padding:10px;  
 }
 input::placeholder
 {
     color:black;
+    font-size:1.1em;
+    padding-left: 9%;
 }
 button
 {
@@ -119,6 +140,7 @@ button
 {
     display:flex;
     align-items: center;
+    margin:1.2em 0em 1.2em 0em;
 }
 ul
 {
@@ -142,13 +164,13 @@ i
     text-align:center;
     padding-right: 10px;
     font-family:ralewaybold;
-    font-size:small;
+    font-size:1em;
 }
 .filter 
 {
     padding-right: 28px;
     padding-right:15px;
-    font-size:small;
+    font-size:1em;
     font-family:ralewaybold;
 }
 .filtres i
@@ -162,23 +184,53 @@ i
 {
     border:2px solid #0065FC;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);;
+    flex-wrap: nowrap;
+}
+.nomfiltre
+{
+    margin:0px;
+    padding:0px;
+    display: inline;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size:1.1em;
 }
 /* phrase nombre de logement disponible*/
+.ligneplusde
+{
+    margin:0px;
+    display:flex;
+    margin-bottom: 1.2em;
+}
+.cercle
+{
+    border:1px solid rgb(189, 186, 186);
+    height: 1.5em;
+    width:1.6em;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align: top;
+    padding-bottom: 2px;
+    margin-right: 0.7em;
+}
 .ilogement
 {
     text-align: center;
-    border:1px solid rgb(189, 186, 186);
-    width: 10px;
-    font-size:xx-small;
-    margin:10px;
-    border-radius:5px;
-    height:10px;
+    font-size:0.7em; 
+    vertical-align: middle;
+}
+.textplus
+{
+   padding-top: 5px;
+   margin-top: 15px;
 }
 /*contenant de article hebergement*/
 .section 
 {
     display:flex;
     justify-content:space-between;
+    width:100%;
+    height:auto;
 }
 /*hebergement à marseille*/
 article
@@ -186,29 +238,30 @@ article
     display: flex;
     justify-content: space-around;
     background-color: #F2F2F2;
-    width:770px;
+    width:65%;
     flex-wrap: wrap; 
     align-items: center; 
     border-radius: 20px ;  
 }
 .titrehebergement
 {
-    width:745px;
+    width:95%;
 }
 .casehotel
 {
-    height: 200px;
-    width:220px;
+    height:auto;
+    width:30%;
     margin:6px 6px 6px 6px;
     padding:3px 3px 3px 3px;
     background-color: white;
     border-radius:20px;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);
+    
 }
 .rectphoto
 {
-    height:130px;
-    width: 220px;
+    height:10em;
+    width: 100%;
     border-radius:20px 20px 0px 0px;
     margin:0px;
     padding:0px;
@@ -223,21 +276,15 @@ article
     border-radius:20px 20px 0px 0px;
 }
 /*nom hotel en gras a retrouver dans section Aside plus bas*/
-.tarif
-{
-    
-    margin:0px;
-}
 .afficherplus
 {
     font-family:ralewaybold;
-    width:730px
+    width:95%;
 }
 /* partie les plus populaires*/
 aside 
 {
-
-    width:400px; 
+    width:32%; 
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -249,10 +296,11 @@ aside
     display:flex;
     justify-content: space-between;
     align-items: center;
+    width:80%;
 }
 .lespluspopu
 {
-    width: 330px;
+    width:80%;
 }
 .fleche
 {
@@ -264,14 +312,15 @@ aside
     background-color: white;
     display: flex;
     margin:10px;
-    width:350px;
+    width:80%;
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);
+    height:9.9em;
 }
 .rectphotopopu
 {
-    width:110px;
-    height:130px;
+    width:35%;
+    height:96%;
     margin:0px 10px 0px 0px;
     padding:3px;
     border-radius: 20px 0px 0px 20px;
@@ -290,31 +339,43 @@ aside
 }
 .nomhotelpopu
 {
-    margin:0px;
+    
+    margin:0.5em 0em 0.3em 0.2em;
     padding-top: 5px;
     font-family:ralewaybold;
 }
 .tarifpopu
 {
-    margin:0px;
+    margin:0em 0em 0em 0.2em;
 }
 .etoilepopu
 {
-    margin-top:40px;
-    margin-bottom: 5px;
+    margin: 4em 0em 0em 0.2em;
+    font-size:small;
 }
 /*Sous image hebrgement*/
 .nomhotel
 {
     font-family: ralewaybold;
-    margin-bottom: 0px;
-    margin-top: 3px;
-    color: black;
+    margin-bottom: 8px;
+    margin-top: 12px;
+    padding-left: 15px;
 }
 .prixetoile
 {
     margin-top:5px;
-    font-size: 0.9em;
+    font-size:0.9em;
+}
+.cadreetoileheb
+{
+    margin:0px;
+    padding-left: 15px;
+}
+.tarif
+{
+    margin: 0px 0px 5px 0px;
+    padding-left: 15px;
+
 }
 /*gras euros*/
 .prix
@@ -324,6 +385,11 @@ aside
 .etoilegrise
 {
     color:#e6e6e6;
+    font-size: small;
+}
+.etoilebleu
+{
+    font-size:small;
 }
 /* Section Activité*/
 .activite
@@ -331,7 +397,7 @@ aside
     display:flex;
     justify-content: space-between;
     margin-bottom: 60px;
-    width: 97%;
+    width: 100%;
 }
 .actiamarseille
 {
@@ -341,7 +407,7 @@ aside
 .rectlong
 {
    height:500px;
-   width:255px;
+   width:23%;
    padding:0px;
    border-radius: 20px;
    box-shadow: 3px 3px 8px rgb(201, 201, 201);
@@ -350,7 +416,7 @@ aside
 .pimg
 {
     height:420px;
-    width:255px;
+    width:100%;
     margin: 0px;
     border-radius:20px 20px 0px 0px;
     
@@ -366,14 +432,14 @@ aside
 .petitcadre
 {
     height:190px;
-    width:255px;
+    width:100%;
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);
 }
 .ppetit
 {
     height: 110px;
-    width: 255px;
+    width: 100%;
     margin: 0px;
     border-radius:20px 20px 0px 0px;
 }
@@ -388,14 +454,14 @@ aside
 .groscadre
 {
     height:270px;
-    width:255px;
+    width:100%;
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);
 }
 .pgros
 {
     height:190px;
-    width:255px;
+    width:100%;
     margin:0px;
     border-radius:20px 20px 0px 0px;
 }
@@ -412,19 +478,20 @@ aside
 {
     display:flex;
     flex-direction: column;
-    justify-content: space-between;   
+    justify-content: space-between;
+    width:23%;   
 }
 .demibloc
 {
     height:230px;
-    width: 250px;
+    width: 100%;
     border-radius:20px;
     box-shadow: 3px 3px 8px rgb(201, 201, 201);
 }
 .pdemi
 {
     height: 150px;
-    width: 250px;
+    width: 100%;
     margin: 0px;
     border-radius:20px 20px 0px 0px;
     
@@ -441,7 +508,7 @@ aside
 .nomactivite
 {
     margin:0px;
-    padding:14px;
+    padding:1.5em 0em 1.5em 1.5em;
     font-family: ralewaybold;
 }
 /* Footer */
@@ -453,7 +520,7 @@ footer
 {
     display: flex; 
     justify-content:space-between;   
-    width:1100px;
+    width:80%;
 }
 ul li
 {
@@ -504,6 +571,12 @@ h5
         box-shadow:0px 3px 8px rgb(201, 201, 201);
 
     }
+    .filtres
+    {
+        display:flex;
+        flex-direction:column;
+        font-size:0.8em;
+    }
     .phebergement
     {
         border-radius:10px;
@@ -523,6 +596,7 @@ h5
     {
         display:flex;
         width:auto;
+        flex-direction: column-reverse;
     }
     article
     {
@@ -531,7 +605,8 @@ h5
         border-radius: 0px;
         width: auto;
         justify-content: space-around; 
-        margin-right:2px;   
+        margin-right:2px; 
+        background-color: white;  
         
     }
     .titrehebergement
@@ -540,7 +615,7 @@ h5
     }
     .afficherplus
     {
-        width: 100%;
+        width: 90%;
     }
     /* partie les plus populaires*/
     aside
@@ -549,7 +624,7 @@ h5
         flex-direction: column;
         width:auto;
         justify-content: space-between;
-        border-radius: 0px;
+        border-radius: 20px;
     }
     .bloctitre
     {
@@ -570,7 +645,7 @@ h5
     }
 }
 
-@media screen and (min-width:320px) and (max-width:667px)
+@media screen and (min-width:320px) and (max-width:767px)
 {
     /*gestion corps du site*/
     body
@@ -580,6 +655,7 @@ h5
     .corps
     {
         width:auto;
+        padding:0px;
     }
     /*partie logo et menu*/
     header
@@ -591,6 +667,10 @@ h5
     {
         order:1;
         padding-top: 4px;
+    }
+    .logo
+    {
+        width:35%;
     }
     nav:nth-child(2)
     {
@@ -604,6 +684,32 @@ h5
         order:2;
 
     }
+    /*banniere*/
+    .banniere
+    {
+        margin-left:8%;
+        font-size:1em;
+    }
+    /*barre rechercher*/
+    .recherche
+    {
+        margin-left:8%;
+    }
+    .filtres
+    {
+        font-size:0.8em;
+        margin-left: 8%;
+        margin-right: 10%;   
+    }
+    .animeaux
+    {
+        margin-right:0%;
+    }
+    .ligneplusde
+    {
+        margin-left:8%;
+    }
+    /*partie hebergement*/
     .phebergement
     {
         text-align: center;
@@ -709,6 +815,7 @@ h5
         width:auto;
         margin:0px;
         border-radius: 0px;
+
     }
     .casehotelpopu
     {
@@ -722,7 +829,8 @@ h5
     }
     .titrehebergement
     {
-        width:auto;
+        width:90%;
+        margin-left:5%;
     }
     article
     {
@@ -730,11 +838,11 @@ h5
         flex-direction: column;
         width:auto;
         background-color: white;
-        align-items: flex-start;
+        align-items: center;
     }
     .casehotel
     {
-        width:95%;
+        width:90%;
     }
     .rectphoto
     {
@@ -742,26 +850,39 @@ h5
     }
     .afficherplus
     {
-        width:auto;
+        width:85%;
         margin-left: 5px;
+    }
+    .cercle
+    {
+        width:35px;
+        height:25px;
+
+        
     }
 /* media queries partie activité*/
     .actiamarseille
     {
         width:auto;
+        margin-left: 5%;
     }
     .activite
     {
         display:flex;
         flex-direction: column;
         width:auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        align-items: center;
     }
 /*gestions taille cadre photo activités*/ 
-    .rectlong, .groscadre, .demibloc, .petitcadre
+    .rectlong, .groscadre, .petitcadre
     {
         height:210px;
-        width:auto;
-        margin:6px;
+        width:90%;
+        margin:5%;
+        margin-bottom: 20px;
     }
     .pimg, .pgros, .pdemi, .ppetit
     {
@@ -772,12 +893,26 @@ h5
     {
         width:auto;
     }
+    .blocdemi
+    {
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .demibloc, .petitcadre, .groscadre
+    {
+        width:100%;
+        margin-bottom: 20px;
+    }
 /* media queries partie du footer*/
     #conteneurfooter
     {
         display:flex;
         flex-direction: column;
         width:auto;
+        margin-top: 25px;
     }
     
 }
