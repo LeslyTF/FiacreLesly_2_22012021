@@ -370,6 +370,7 @@ aside
 {
     margin:0px;
     padding-left: 15px;
+    padding-bottom: 4px;
 }
 .tarif
 {
@@ -877,6 +878,10 @@ h5
         align-items: center;
     }
 /*gestions taille cadre photo activités*/ 
+    .nomactivite--marge
+    {
+        padding-top: 15px;
+    }
     .rectlong, .groscadre, .petitcadre
     {
         height:210px;
