@@ -33,7 +33,8 @@ a
 {
     width:auto;
     margin:auto;
-    padding:30px;
+    padding:0px 30px 30px 30px;
+  
 }  
 /* Titre Logo Menu */
 header
@@ -61,10 +62,10 @@ nav
 }
 .phebergement
 {
-    margin-top: 12px;
+    margin-top: 0px;
     margin-right:50px;
     border:2px solid white;
-    padding-top: 16px;
+    padding-top: 28px;
 }
 .phebergement:hover, .pactivite:hover
 {
@@ -75,9 +76,9 @@ nav
 .pactivite
 {
     margin-right: 50px;
-    padding-top: 16px;
+    padding-top: 28px;
     border:2px solid white;
-    margin-top: 12px;
+    margin-top: 0px;
 }
 .inscrire
 {
@@ -110,7 +111,8 @@ form i
     height:42px;
     border:1px solid #F2F2F2;
     font-family: ralewaybold;
-    color:black;   
+    color:black; 
+    margin-left:-3px; 
 }
 .rechercher
 {
@@ -123,7 +125,8 @@ form i
     font-family:ralewaybold;
     margin:0px;
     font-size:0.9em; 
-    padding:10px;  
+    padding:10px; 
+    margin-left: -2px; 
 }
 input::placeholder
 {
@@ -541,7 +544,7 @@ h5
 }
 /*FIN DE LA PARTIE DESKTOP ET DEBUT RESPONSIVE AVEC MEDIA QUERIES MOBILE ET TABLETTE*/
 
-@media screen and (min-width:768px) and (max-width:1024px)
+@media screen and (min-width:768px) and (max-width:1220px)
 {
     /*partie logo menu*/
     header
@@ -799,7 +802,7 @@ h5
     {
         order:4;
         text-align: left;
-    }
+    }   
     .romance:nth-child(3)
     {
         text-align: left;
