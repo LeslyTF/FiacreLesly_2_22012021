@@ -183,6 +183,10 @@ i
     background-color:#DEEBFF;
     padding:10px;
 }
+.filtres .familleresize
+{
+    padding:10px 13px 10px 13px;
+}
 .money:hover, .famille:hover, .romance:hover, .animeaux:hover
 {
     border:2px solid #0065FC;
@@ -553,6 +557,10 @@ h5
         flex-wrap:wrap;
         justify-content: flex-start;
     }
+    .resizelocalise
+    {
+        padding:17px 16px 16px 16px;
+    }
     .plogo:nth-child(1)
     {
         width: 100%;
@@ -629,6 +637,10 @@ h5
         width:auto;
         justify-content: space-between;
         border-radius: 20px;
+    }
+    .lespluspopu
+    {
+        width:100%;
     }
     .bloctitre
     {
